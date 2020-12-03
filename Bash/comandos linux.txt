@@ -1,0 +1,13 @@
+pwd -> muestra ruta
+mv archivo carpeta -> mueve el archivo a la carpeta
+touch eee.txt -> crear archivo
+mv archivo archivo -> cambiar nombre del archivo
+find -name "*.txt" -> me busca los archivos con esa extensión
+find -name "*.txt" | wc -l -> me busca los archivos con esa extensión y cuenta la cantidad
+find -name "*.txt" | xargs grep -n 'while' | wc -l -> toma c/u de los archivos, busca las coincidencias con 'while' y muestra la cantidad
+-gt 0 -> greather than '
+i<${#text} -> mientras i sea mayor que la longitud de la variable text (str)
+newText+={text:$i:1} -> desde el caracter i de la palabra text, dame un caracter y asigname esa letra a la cadena newText
+rev -> dar vuelta
+cut -d '-' f1 -> tomar la parte del string hasta que encontremos un guion (recortamos el string) a partir de la primer palabra (f1) del string
+echo $"Ejemplo ALGO" | sed s/ALGO/ALGO2/g -> nos devuelve ejemploALGO, pero todos los algo los reemplaza con ALGO2
